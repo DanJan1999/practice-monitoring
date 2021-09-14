@@ -26,7 +26,7 @@ app.post('/api/student', (req, res)=>{
 
     if(index === -1 && name !== ''){
         students.push(name)
-        rollbar.log('Student added successfully', {author: 'Scott', type: 'manual entry'})
+        rollbar.log('Student added successfully', {author: 'Daniel', type: 'manual entry'})
         res.status(200).send(students)
     } else if (name === ''){
         rollbar.error('No name given')
